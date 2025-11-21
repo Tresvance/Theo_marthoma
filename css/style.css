@@ -228,56 +228,71 @@ button {
 
 /* header section start */
 
+/* Header Section */
 .header_section {
     width: 100%;
     float: left;
     position: relative;
-    z-index: 1;
+    z-index: 9999;   /* Ensure navbar stays above the banner */
 }
 
+/* Navbar Brand */
 .navbar-brand {
     margin-right: 0px;
 }
 
+/* Navbar */
 .navbar {
-    padding: 0px 25px 0px 25px;
+    padding: 10px 25px;
+    background-color: #ffffff !important; /* FULL solid white */
+    position: relative;
+    z-index: 9999;
 }
 
+/* Center items */
 .mr-auto,
 .mx-auto {
-    margin-right: auto!important;
+    margin-right: auto !important;
     margin-left: auto !important;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px 20px;
+/* Nav link spacing */
+.navbar-expand-lg .navbar-nav .nav-link {  
+    padding: 10px 20px;
     font-size: 16px;
     color: #717172;
     text-transform: uppercase;
 }
 
+/* Hover effects */
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: #041151;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+/* Active link style */
+.navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link {
     color: #041151;
 }
 
+/* FIXED: Removed negative margin that caused overlap */
+/* 
 .navbar-expand-lg .navbar-collapse {
     margin-top: -70px;
 }
+*/
 
+/* Search icon */
 .search_icon {
     padding-top: 0px;
     text-align: center;
     width: 100px;
 }
 
+/* Donate button */
 button.donate_btn {
     width: 150px;
     font-size: 18px;
@@ -286,8 +301,9 @@ button.donate_btn {
     border: 1px solid #f64646;
 }
 
+/* Fully solid background */
 .bg-light {
-    background-color: transparent !important;
+    background-color: #ffffff !important;  /* Solid white */
 }
 
 
@@ -299,19 +315,35 @@ button.donate_btn {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
-    height: auto;
+    background-image: url(../images/Bannerhome.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    top: -70px;
     margin-bottom: 0;
 }
 
+.banner_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* overlay color */
+    z-index: 1;
+}
+
+/* Make sure your content stays on top */
+.banner_section * {
+    position: relative;
+    z-index: 2;
+}
+
+
 .banner_taital {
-    width: 45%;
+    width: 100%;
     margin: 0 auto;
-    font-size: 60px;
+    font-size: 40px;
     color: #ffff;
     text-transform: uppercase;
     text-align: center;
@@ -323,7 +355,7 @@ button.donate_btn {
 .banner_text {
     width: 85%;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 24px;
     color: #ffff;
     text-align: center;
     padding: 20px 0px;
@@ -432,6 +464,7 @@ button.donate_btn {
     width: 70%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 250px;
 }
 
 .fundraise_section {
@@ -446,6 +479,8 @@ button.donate_btn {
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
     height: auto;
     padding: 30px 20px 70px 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .icon_1 {
