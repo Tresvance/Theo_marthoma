@@ -350,6 +350,7 @@ button.donate_btn {
     font-weight: bold;
     line-height: 60px;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 100px;
 }
 
 .banner_text {
@@ -448,7 +449,7 @@ button.donate_btn {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    background-color: #120a78;
+    background-color: #71780a;
     padding: 8px 40px;
     text-transform: uppercase;
     margin-top: 20px;
@@ -475,7 +476,7 @@ button.donate_btn {
 
 .box_main {
     width: 100%;
-    background-color: #120a78;
+    background-color: #ea1c23;
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
     height: auto;
     padding: 30px 20px 70px 20px;
@@ -527,7 +528,7 @@ button.donate_btn {
 }
 
 .box_main.active {
-    background-color: #f64646;
+    background-color: #3c2d25;
 }
 
 
@@ -539,7 +540,7 @@ button.donate_btn {
 .about_section {
     width: 100%;
     float: left;
-    background-color: #120a78;
+    background-color: #92bfdf;
     padding-bottom: 90px;
 }
 
