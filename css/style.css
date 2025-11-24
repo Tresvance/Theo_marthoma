@@ -553,7 +553,7 @@ button.donate_btn {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
+    color: #161616;
     text-transform: uppercase;
     padding-top: 20px;
     font-weight: bold;
@@ -565,7 +565,7 @@ button.donate_btn {
     float: left;
     font-size: 16px;
     margin: 0px;
-    color: #ffffff;
+    color: #151515;
     padding: 50px 0px;
 }
 
@@ -580,9 +580,9 @@ button.donate_btn {
     float: left;
     text-align: center;
     font-size: 16px;
-    color: #ffffff;
+    color: #1e1e1e;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid #1e1e1e;
     padding: 8px 0px;
     text-transform: uppercase;
 }
